@@ -1,0 +1,75 @@
+/* Standard-Stile */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --button-bg: #f0f0f0;
+    --button-text: black;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: white;
+    --button-bg: #333;
+    --button-text: white;
+}
+
+/* Grundlegendes Styling */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Dark/Light Mode Button */
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Uhren-Container */
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Analoge Uhr */
+canvas {
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1 / 1;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Digitale Uhr */
+.digital-clock {
+    font-size: 2em;
+}
+
+/* Datum */
+.date-display {
+    font-size: 1.2em;
+}
+
+/* Wetteranzeige */
+.weather-display {
+    font-size: 1.2em;
+}
